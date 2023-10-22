@@ -1,0 +1,10 @@
+--- src/libs/manymouse/x11_xinput2.c.orig	2023-10-02 03:13:30
++++ src/libs/manymouse/x11_xinput2.c	2023-10-02 03:13:06
+@@ -33,6 +33,7 @@
+ #include <string.h>
+ #include <dlfcn.h>
+ #include <X11/extensions/XInput2.h>
++#include <sys/select.h>
+ 
+ /* 32 is good enough for now. */
+ #define MAX_MICE 32
